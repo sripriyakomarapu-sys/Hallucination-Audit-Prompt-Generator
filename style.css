@@ -6,11 +6,7 @@
 }
 
 body{
-    background-image:url("./images/background.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    background:linear-gradient(135deg,#a7487e,#9333ea);
     padding:20px;
 }
 
