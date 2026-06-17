@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background-image:url("./images/background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+}
+
+header h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.1rem;
+}
+
+#generator,
+#documentation,
+#tools,
+#sample{
+    background:white;
+    max-width:900px;
+    margin:20px auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    margin-bottom:20px;
+    color:#832f72;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+textarea{
+    min-height:120px;
+}
+
+button{
+    background:#84336c;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#7e22ce;
+}
+
+#output{
+    margin-top:15px;
+}
+
+i{
+    color:#0a0a0a;
+    margin-right:8px;
+}
+section:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}

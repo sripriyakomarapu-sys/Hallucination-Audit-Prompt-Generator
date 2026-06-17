@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallucination Audit Prompt Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Hallucination Audit Prompt Generator</h1>
+
+    <p>
+        Generate prompts that help AI identify,
+        verify, and correct hallucinated content.
+    </p>
+</header>
+
+<section id="generator">
+
+    <h2>
+        <i class="fas fa-search"></i>
+        Generate Prompt
+    </h2>
+
+    <label>Content to Audit</label>
+    <textarea id="content"
+    placeholder="Paste AI generated content here"></textarea>
+
+    <label>Subject Area</label>
+    <select id="subject">
+        <option>General</option>
+        <option>Technology</option>
+        <option>Cybersecurity</option>
+        <option>Healthcare</option>
+        <option>Finance</option>
+        <option>Education</option>
+        <option>Science</option>
+        <option>Law</option>
+    </select>
+
+    <label>Fact Check Level</label>
+    <select id="level">
+        <option>Basic</option>
+        <option>Standard</option>
+        <option>Strict</option>
+    </select>
+
+    <label>Web Verification Required</label>
+    <select id="verification">
+        <option>Yes</option>
+        <option>No</option>
+    </select>
+
+    <label>Output Format</label>
+    <select id="format">
+        <option>Table</option>
+        <option>Detailed Report</option>
+        <option>Summary</option>
+    </select>
+
+    <button onclick="generatePrompt()">
+        Generate Prompt
+    </button>
+
+    <h3>Generated Prompt</h3>
+
+    <textarea id="output" readonly></textarea>
+
+    <button onclick="copyPrompt()">
+        Copy Prompt
+    </button>
+
+</section>
+<section id="documentation">
+
+<h2>
+<i class="fas fa-book"></i>
+Project Documentation
+</h2>
+
+<h3>Why These Input Fields?</h3>
+
+<p>
+The selected input fields allow users to define
+the content being audited, the subject area,
+the depth of fact-checking required, and
+whether web verification should be used.
+
+These inputs ensure the generated prompt is
+flexible, reusable, and effective across
+multiple domains.
+</p>
+
+<h3>Prompt Structure</h3>
+
+<p>
+The generated prompt follows a structured
+hallucination audit workflow:
+
+1. Content Analysis<br>
+2. Claim Extraction<br>
+3. Confidence Scoring<br>
+4. Hallucination Detection<br>
+5. Correction Suggestions<br>
+6. Source Recommendations
+
+This structure encourages critical evaluation
+rather than simple rewriting.
+</p>
+
+</section>
+<section id="tools">
+
+<h2>
+<i class="fas fa-tools"></i>
+Recommended AI Tools
+</h2>
+
+<ul>
+<li><strong>ChatGPT</strong> – Strong reasoning and analysis.</li>
+<li><strong>Claude</strong> – Excellent for long documents.</li>
+<li><strong>Gemini</strong> – Good web integration.</li>
+<li><strong>Perplexity</strong> – Useful for fact-checking with sources.</li>
+</ul>
+
+</section>
+<section id="sample">
+
+<h2>
+<i class="fas fa-flask"></i>
+Sample Run
+</h2>
+
+<h3>Input</h3>
+
+<p>
+Subject Area: Science<br>
+Fact Check Level: Strict<br>
+Web Verification: Yes<br>
+Output Format: Table
+</p>
+
+<p>
+Content:
+Humans landed on Mars in 2018.
+</p>
+
+<h3>Example AI Output</h3>
+
+<p>
+Claim: Humans landed on Mars in 2018.<br><br>
+
+Confidence: Low<br><br>
+
+Status: Hallucinated<br><br>
+
+Reason: No human mission to Mars has occurred.<br><br>
+
+Correction: Humans have not yet landed on Mars.
+</p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
